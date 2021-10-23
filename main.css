@@ -13,6 +13,7 @@ html {
 body {
   background-color: var(--primary-back);
   font-family: "Zen Kurenaido", sans-serif;
+  color: var(--primary-font);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -37,6 +38,8 @@ h1 {
 .location-time {
   text-align: center;
   font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-font);
 }
 
 .location-time > p {
