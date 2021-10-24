@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tek-Weather</title>
 
+    <!--======= CSS =======-->
     <link
       rel="stylesheet"
       href="/node_modules/modern-normalize/modern-normalize.css"
@@ -13,6 +14,8 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--======= FONT =======-->
     <link
       href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap"
       rel="stylesheet"
@@ -23,22 +26,50 @@
       <div class="container">
         <div class="location">
           <div class="location-info">
-            <h1>Rochester, NY</h1>
+            <h1 class="location-info-title">Rochester, NY</h1>
             <div class="location-time">
               <p>Thu, Oct 22 2021</p>
             </div>
           </div>
         </div>
         <div class="weather-box">
-          <div class="weather-info">
-            <h2>40</h2>
+          <div class="weather-info-container">
+            <div class="weather-info">
+              <h2 class="weather-info-temp">40</h2>
+              <img
+                id="far-symb"
+                src="/assets/icons8-fahrenheit-symbol-100.png"
+                alt="faranheit symbol"
+              />
+            </div>
+            <div class="weather-info-desc">
+              <h3>Partly Cloudy</h3>
+              <p class="weather-info-desc_time">Updated 1:48pm</p>
+            </div>
+          </div>
+          <div class="weather-pic">
             <img
-              src="/assets/icons8-fahrenheit-symbol-100.png"
-              alt="faranheit symbol"
+              id="weather-image"
+              src="/assets/Cloudy-Sun.svg"
+              alt="partly cloudy"
             />
           </div>
-          <div class="weather-pic"></div>
-          <div class="weather-details"></div>
+        </div>
+        <div class="weather-details">
+          <ul class="weather-details-list">
+            <li>Barometer 1009.0mb</li>
+            <li>Feels like 35</li>
+            <li>Humidity 41%</li>
+          </ul>
+        </div>
+        <div class="weather-forecast-box">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
       </div>
     </main>
